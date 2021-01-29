@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+header {
+  text-align: center;
+}
+
+header h1 {
+  margin: 2rem 0 1rem 0;
+  font-size: 50px;
+}
+
+header p {
+  font-size: 20px;
+}
+
+.cards {
+  width: 100%;
+  display: flex;
+}
+
+.cards > div {
+  width: 100px;
+  height: 100px;
+  flex: 1;
+}
+
+#card1 {
+  background: #22e707;
+}
+#card2 {
+  background: #e76107;
+}
+#card3 {
+  background: #3707e7;
+}
+#card4 {
+  background: #e7079c;
+}
+#card5 {
+  background: #e70707;
+}
+#card6 {
+  background: #07e7c2;
+}
+
+.bubbel > div {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 0;
+  animation: move 1s ease;
+  z-index: -1;
+}
+
+@keyframes move {
+  0% {
+    bottom: 0;
+    left: 25%;
+  }
+  50% {
+    bottom: 50%;
+    left: 50%;
+  }
+  100% {
+    bottom: 0%;
+    left: 75%;
+  }
+}
